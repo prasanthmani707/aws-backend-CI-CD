@@ -1,0 +1,44 @@
+{
+    "Configuration": {
+        "FunctionName": "Splunk-versions-CRUD",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:Splunk-versions-CRUD",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/package_manager-DEV",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 1596,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2026-02-14T12:51:27.554+0000",
+        "CodeSha256": "8+70SUg106U7Z4JKjySe8Ygx0+NbpR99zlII6BUBwd0=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "ad1206f8-2b80-4d51-9a9a-49d03471861e",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:56e5d40baed9b17e9a1012f98c2cdec3e35d0e94f29d4e345aaf41135da5d7ab"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/Splunk-versions-CRUD"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/Splunk-versions-CRUD-0aa35c4b-44b1-41c8-ad49-503e51bd2daa?versionId=o56qZdXk0Vsz5QGE4LQhyfFzx1_mH254&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDsIjjYZJP3lZlSxqjBWtJtjz8GFQmN%2FSYEb1RGccBmQAIhAMMuZJMZ8JfKHw50AlBSCfKq7EkgQ0ppsUAf4acKvdWVKosCCG8QABoMNzQ5Njc4OTAyODM5Igx%2FUx%2BRmyfVWwrNhKYq6AGlA7OYrkTCZEtfaMKFutAH2%2F2xzxCoftxEuTIWgEUXYBI%2FD5t6ctGzv8pRK0Yhme7YPGYyp4ElP5vOctPQ0fExTjT83hYcdKBMJwDMWdA%2FjTSuj0rCVWe500pv%2FY5q0vp3dimqr89qXwsuAUVW8KgYS9fw5z4cEg8q%2B%2FTtFYhGsCYiIfex5Q3n5EBAz%2B45nmCyPmu5DtT06CHMi%2F4XifXDRIoSj6%2BSdumAEe8Bv%2B5YXGw7jfupJueUUJ%2BabY6BUIy1IPPPAP9eHGWPSv0SgSJmvnfHSCXHLT7aHsKHnx5152NnUF2bO0A9MMbxmtAGOowB%2BYUjOW5Avrxrm4IdGWg2FXDd01fxgsyK83onhU9hrn6hPB3aKEXd17MIVacqUHtQGxzlWAAFUXG8Wzy8sU1G1TR3NC1VMfJWUpzPZEp4ZcIe6aLsq8NXc9pAN%2FIEy27VzEBhaNuNItaAaMSv5NLdaKnzruAGbfEe9MgSu2yF1%2FDFclgTs4vun6yPQok%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260515T072847Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY3VLGDT25W%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=fe76d31ba21c82dd98c324690a01de3cca527bdc06a29ca611fb6ed14659688c"
+    }
+}

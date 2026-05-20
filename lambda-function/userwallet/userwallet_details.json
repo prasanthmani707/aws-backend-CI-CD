@@ -1,0 +1,44 @@
+{
+    "Configuration": {
+        "FunctionName": "userwallet",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:userwallet",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/userwallet-DEV",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 3238,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2026-02-14T12:53:18.260+0000",
+        "CodeSha256": "cC3N5q4kfqMr9qGS4KVQLlP9/lZU94yTsdZ6tyNu1Ug=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "4be4b4f2-be5e-4724-94bd-cc51516a9d1e",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:56e5d40baed9b17e9a1012f98c2cdec3e35d0e94f29d4e345aaf41135da5d7ab"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/userwallet"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/userwallet-24cee98a-552b-444d-a8a8-1fb9675e4d1c?versionId=Hl3nXuA9axoTJ1X0h2Qw1dNmdW3VbYXZ&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIFbITHsz5ZXrP29OvUSrG83KVVAvcYQg%2F4z2%2BcqI3R16AiEA3Bk18BCeZ8GCST4i26lF3nZE0%2BiX1fbq5kOK19RHwDwqiwIIbxAAGgw3NDk2Nzg5MDI4MzkiDEk%2Ba6DZslib5Vt0XiroATfouYCiJ4Zn23jWuylYKjzXU7ahjxC9gfUrc2klzsxn8R0dx5tQR3N1kDuD%2BsKkRmnjgyiAWNIZHO84J8c%2FiNviqrMOPfij2BW8PEFgRifv1ZPb%2Fj19Nb2HbZzFlE7PHFdKQrsSscHNewuA%2B1PSTthNqS3d5%2BT2pLAMBz5uu5Y5py1ZRJNiMFk4M4m0D0%2BGceIcgjuA7115qD8v7%2BxBffbJOTbNO9qH7iNae%2BQJuR9ucGewqDadxdHRXc2%2BkP%2FQPbMb8zzzh0YcQiF%2FCntNcEO0DgHXsTendQ6rgw%2BLqJ5ZqXDOSkHZMFcw7PCa0AY6jQEIFtedGVqOdGGedTKC%2BBrBC22%2BjLDjF91MiDmSQGphhPB8%2FPE7R21nZi1TdOP1AFvHjgsAJ0rFYikOuMUKy9pgK%2BSxb4UpMUMdDD9ixRhwW6Z24PoXlqd7QkfWjQkCif%2F%2FyuucEhms9O0pYCoHjAVhLVvo0W%2FtBcUyCeIklSZT%2BIWZUalo5iMqb%2BI49lo%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260515T071026Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY37JMGBDXZ%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=c2fbbd6eb35e44581ff297b38713aa07234053ffaac1a2af0ad5448d61c053e6"
+    }
+}

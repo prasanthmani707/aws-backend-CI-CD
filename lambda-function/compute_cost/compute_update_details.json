@@ -1,0 +1,44 @@
+{
+    "Configuration": {
+        "FunctionName": "compute_update",
+        "FunctionArn": "arn:aws:lambda:ap-south-1:795162565644:function:compute_update",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::795162565644:role/service-role/compute_update-role-84sgnufc",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 1744,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2026-02-14T08:47:31.000+0000",
+        "CodeSha256": "nBg2cYbKu2OZCaxN8Bic16QKfZ4NxBeZwIo/LoZrUfo=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "bc293c3a-9e90-445d-b911-e76532cfa493",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:ap-south-1::runtime:58b00e3dde99135a08aa9b054a66c1aab6a805d9f1b730baba00e18eabab6cfb"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/compute_update"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-ap-s-1-tasks.s3.ap-south-1.amazonaws.com/snapshots/795162565644/compute_update-961ee3fc-3a65-4649-a895-325335d3c6d4?versionId=5onSa8QRIZpl5jBo4k0xHfNNYK1aETun&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGEaCmFwLXNvdXRoLTEiRjBEAiAuqmWLZDGAvz%2Bnb2IxluYgAwJJYbP5y2FlDScR%2B0%2FlNgIgdGZbUFCTAD5Iw7RTvbVxfYJYZYV1xkARwL3jHslLUsIqiwIIKhAEGgw1NDUyNTUyMDEzMDciDDS1%2F8%2BS%2BXZCoLAQeiroASDTRCU8X1ZsQ5IWIPRE7%2FbJ8U4AcqESj%2BWo69hb6KZIH0Hjr%2BRDA4bwzPErtFqmroghoyW7O9wY124hdwiEaNSMeSYRKlfahQs3KGgXBTDTFxI%2BQ069q63MT%2BpBYRaMw1QnFS2WfF6QdzN67NPyM8ECXqtovWaCWi%2BD%2BvIYwc%2BGiQ%2FiJjhFhgpgpwwg9FCeKs0a6z%2FR4NKKnSpMRfPNWeKtgf5eVweYX6zmXG2iPmHqamdhvxlY8%2B%2FTZLAJVB1LDUnXdXeMPOWUVf0iAzfd4D6iryCSG2z2Le8EORoQ6v497y6yGdVLj68wu%2BHJzAY6jgGMF6PispaQLu%2B%2BVcoCYJCs0f5bGRfwP1ewYl5RIKGq7UdycF%2Bl9sB%2FXTdpDcKxbqFp1E%2BsnsSjpg3W8FMoMt%2FkjIPrwDQbWoMBLQVcOWWiIRAUADjb5v%2B%2Fvu00PnNQ2b%2BEHmr04JkbakfJQgSmDImXWb4UILN6zEP%2BW%2F8EngtL%2BlcJS%2BGTgdyvcr7Oe7yr&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260216T083453Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAX5456DIN2RICJKXG%2F20260216%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=778c47414c2a5e62fc881a1830d577447466e2046b37f2e6eb338323344d5328"
+    }
+}

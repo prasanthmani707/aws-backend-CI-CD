@@ -1,0 +1,44 @@
+{
+    "Configuration": {
+        "FunctionName": "user_instance_terminate_by_schedule_creditbased",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:user_instance_terminate_by_schedule_creditbased",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/termination_creditbased_role",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 675,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2026-04-01T08:23:10.000+0000",
+        "CodeSha256": "vjrwE3qOfMX0r9zMyhmmkU2DboZGCSWF3MyHJYkmCrs=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "7e92d839-6b00-4bdb-8119-90185722bc6f",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:c51a1796965c4cd7cb4442b973dd7819a70e317fdcb47e87a778352dbbd09749"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/user_instance_terminate_by_schedule_creditbased"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/user_instance_terminate_by_schedule_creditbased-991d5f1c-3da6-43f4-8e45-454f207aafa1?versionId=sy7kSBr0.BJq9Rc6OcpL..hFxqB0jBB.&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQCm%2FxMlNsFrsKc3JhWsvkDbX%2BvPyW9ogSWE7Cp0JBTkQQIhAMQe%2FljVlTVEjX0egPK2rjx0mW470FnKXXfoFKtPkgOlKosCCHAQABoMNzQ5Njc4OTAyODM5IgyeoJ29ZQt5IT%2BOLogq6AEUc1WhM8dIvx0SOGL%2FB2OtgE%2Fz%2BlwemTleIjtVHJPoNKSdfsAvVdzplvt1PCOSihBdXfjRQzNK86kGhng%2B%2FVW%2B3zrtdVKJFUMjsIeDPc6Z3O9uZ6PDWXhhXPOSximETZvU8H6aTvgc0alUm2vzNM0%2FotXMjDGKAIGeujAcy5oqcC8uXTGqzV4TZgCb%2BOp7AissGBWekfQMLvN15w6kWyllYVZRpYjJPRRBbFdbeplqu6Q1FG9nHk9SqbZyj12rJMxBKYVDsdQBamO96beUROHa6wDp1YSNNbmccy%2BLU62tvFhxYiXVwUqwMOz8mtAGOowBAp9XY907mbWgJL7tW3JnBKWEaqRtqDozkqIYCe2fTyEMzdNJfPcyy2wU6ZqJp%2Ff5VKnbxicxfN6dUrvPfo3hIadtn%2FTOejCLcUVS%2BnogAL5we2wPWwHjDXzEOvaakLJmds9vc%2BkcFzzFZlHsQIYNacJbuKRnszOv02As%2FQOVZG1PHDNLU4z4vSXfOOo%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260515T072251Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY3S346Q2PQ%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=070e7eb5f23719b925dfeae7ebe584f2f4342973f3fe67f84d89fcbe31744071"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "Configuration": {
+        "FunctionName": "checkUserLab",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:checkUserLab",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/EC2QuotaCheckerRole-DEV",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 1672,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2026-04-18T12:52:51.000+0000",
+        "CodeSha256": "7fRdHdayVbce+ILPOukzqMQrOYk1xdnI3j+rfo0ySa0=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "b1faf609-e4fa-4c5d-afea-5da71446b61a",
+        "Layers": [
+            {
+                "Arn": "arn:aws:lambda:us-east-1:813348525611:layer:auth-layer:2",
+                "CodeSize": 614
+            }
+        ],
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:c51a1796965c4cd7cb4442b973dd7819a70e317fdcb47e87a778352dbbd09749"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/checkUserLab"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/checkUserLab-d4edae9a-b6f9-477b-a26a-3486fdae0184?versionId=NzMocbKzvbvl.pBXwuCe6l.aJQPlGB6D&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIGr23ARUCyGeJL9YIxjUn9khQ7BhUW%2F2ThXyMkDcxkKVAiBqDZqx%2Ba0qZvLqbmyln3fyzQrdBsGGOtB5050%2FA7pkLyqLAghlEAAaDDc0OTY3ODkwMjgzOSIM7Z3p%2B1zA1Nw%2BmUeLKugBJSj5rqVZkKdFw4vLk4pjt89RsgrRFzmplPX7Ipygg4tSj%2FVl%2FrVJXd7TWtIfCi67kmpKIxABIV%2BbDv1A%2B1zowF2%2BXLEIkmUDrH74G6fXXgMRXppGHxrsjzDhqKDAIEsM%2B8ACNCOaa7KeAm2Ixt6OO4dYSyJJEH7XT4FVZJINsp8vBG4MYx1Kr%2FL8lMUf8CpDaIBp7py%2Bo5YUUlx71OVSAOVp898091rVQc0U0pOsT03eiPAGx%2BmZS6W7rtZs7LSMTcrMDPWgQ2Dggbyju4%2ForMIwRWDNCY4uAr%2FcshSpYEYPZSzop35htTDt0pjQBjqOAZTZdT2wo9Cki5cL5V5uG%2F50iHRdnyk8Rn16aOyQvmiQmxfqClgN%2BRcOekj8JL6UFUrO1mI03I2GZqkpXM5Hzp6nNpI8%2B4up9fvfW0sLIj%2BW8lTvnKCO4%2FBYWn%2BmcvDs9AAM7aTeDrJQV16iB7WZBhGzFfePBVGoNMocJCIKP5K64SdNQ%2F6cws5OlAoEQvs%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260515T071235Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY36TVWO5JN%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3868034c08c9c226738a2687d10fd93c3592ad88372f6c4019837d81d6ee424c"
+    }
+}

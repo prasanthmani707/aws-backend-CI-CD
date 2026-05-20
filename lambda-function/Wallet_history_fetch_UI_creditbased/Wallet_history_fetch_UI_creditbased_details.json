@@ -1,0 +1,44 @@
+{
+    "Configuration": {
+        "FunctionName": "Wallet_history_fetch_UI_creditbased",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:Wallet_history_fetch_UI_creditbased",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/Deduct_role_creditbased",
+        "Handler": "handler.lambda_handler",
+        "CodeSize": 624,
+        "Description": "",
+        "Timeout": 30,
+        "MemorySize": 128,
+        "LastModified": "2026-03-10T07:02:09.000+0000",
+        "CodeSha256": "cBzvldBn6qrIL3qOyMcwwbQkJuRGUXTKYT8i1zTxXNw=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "955730c0-2c3e-4b37-9e53-25a79b99670f",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:b0f2d40716005f99e1e65ab9c4ba4749be69e8c44df93eecbb62a1fff12bd80f"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/Wallet_history_fetch_UI_creditbased"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/Wallet_history_fetch_UI_creditbased-b6462446-f885-461a-aeda-2c0f0be6f5c3?versionId=COKsfA46dve2IdDz1NIJxlF09CKJevNx&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQCE0eEzaHTfPVEYqS5Pbho8DlMkOmtHXhEqWNd1KoPVqgIgdZ8h0uHAf9%2F3JrlnukArr%2BPE%2FThddu1vhN4ALLE9NvAqlAIIvv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw3NDk2Nzg5MDI4MzkiDCmhExAmnjwJWDeLnCroAfoaxJVBSXj%2FxMatczMySe7HSy2LhH3MxaSj%2F0coOLUrnsODEwVcYzyzHqDbisEZI1KzdCz%2BsNliW5P%2FKEK7xdDwTHCsRBCZQx4hmdncE4oJWmWviVEIwDTkNsTFnOSCWuK2%2Bi5Kq7sgLsem7H6RfDihtJxOFlerKvYGVxP3vPYSUn7NcgMc58z9E%2BzDT23sMksfUL%2FzbbPdlwHNFz2XTwdVoxyTFjHWu1Jk%2F%2BsBSUdgckyHVxc0XXS6Nr6ymnwWB3DIhqlEtBVX5cxXx43wiwO%2FshqOFFxcZDoGRBnQqNEUgBW1NM6EcXAwxZ3LzgY6jQHMdUb1%2B5GRIMI%2BhLLbGZWgTNarl%2B7s1NAOAA1%2FosnEPwQj5kE6LiuhiJdRs64pFQFkIbwBXBXlQUlYBfUgHQTbtpYG%2FjnrNOHdfxa3jYWFPogiFjVQ0zCuDpYyE%2Bxdx5XXzAPVusx1nInDhp4SOgC4Ei7rAipPfwIemV%2F5l5qjDNcnbLQCVds%2FaKFIkdw%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260406T083618Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY32BPTL5HE%2F20260406%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=7aaaa4fc6f9efc19cb254efd7c508a8809120b4333c65d7482a3dbf330392fce"
+    }
+}

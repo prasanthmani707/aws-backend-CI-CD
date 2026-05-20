@@ -1,0 +1,50 @@
+{
+    "Configuration": {
+        "FunctionName": "pem-files-get",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:pem-files-get",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/Lambda-Splunk-Deployment-Role-DEV",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 1060,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2026-04-15T09:39:41.000+0000",
+        "CodeSha256": "Gv7scmQQ1HxMCztUt/V6mwWuuhixyNwFHIa7yw5Dclw=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "2401c2ab-d49d-4047-8026-53935244d6bd",
+        "Layers": [
+            {
+                "Arn": "arn:aws:lambda:us-east-1:813348525611:layer:auth-layer:2",
+                "CodeSize": 614
+            }
+        ],
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:c51a1796965c4cd7cb4442b973dd7819a70e317fdcb47e87a778352dbbd09749"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/pem-files-get"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/pem-files-get-4941367e-4e3b-4dfc-b1b7-52604219f19b?versionId=KVPqX3ygGvLwhoqEn3oqOicLrZPNzK4S&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQCNyfdxcxKZB5baDs7Corhr041%2BjUF%2BUV7YvEEgaPVttAIgMKL5yHdwhPKb%2F%2FsuM9ZkK%2FPtUHpxgBLo1rrBhxT7lVUqiwIIbxAAGgw3NDk2Nzg5MDI4MzkiDDQq4t4FjcDhGyl7SyroARD6dTE9aCOyn6H1ECKj6qJ7H7VvugcYt%2Fnery9kjnmlNJ8UMnVyVlGSwahxEAHCRC4ktRyCN%2BKJ1px%2FXHGfdBvbfGgkMgGGDe16yaNn022w18Pu3Z8ymauclGarVaeLB%2BQ1CN9RtZ7zM75IRhMsL%2BqPLzPno7WmvGaz8fCP8%2FECWAx2AhNRbuXI742RaRcM%2F0RtQUgRY038ZJGo71Lvs33bCLbqrrFrGbVyEwq9VAB3SXE6XsebdR9RS9333vPqJQ3neIuedTOg7zkPjpPe9F4zPGECp1PuMsESRbVEySUwSnCFhjMhlTAwwuqa0AY6jQHITHmhJ%2BNGcgPX2HCZ0%2BkdcKoKwjDaeTkjCzr%2Fth4M86AG6tMMlKAs6G4bK113CECuT25i1aK8C1p1aD95v2SoVshdza0%2B7d7mXunml%2FR%2FAwk9RQO4g9W7qBoE1yLpoG5qR54a6J0x%2FGLpt2O%2FNnW2K6ZUKkTNnlCxjvzuRtK3ZgfkpFxjmwe1TLeRvfo%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260515T070522Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY3YA2ZQ4VT%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=580ba9123e92acee95c755329d517f615ee43a2a9281b618b8c2a1561aa2196c"
+    }
+}

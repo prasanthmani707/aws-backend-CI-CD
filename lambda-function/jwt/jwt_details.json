@@ -1,0 +1,60 @@
+{
+    "Configuration": {
+        "FunctionName": "jwt",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:jwt",
+        "Runtime": "python3.11",
+        "Role": "arn:aws:iam::813348525611:role/service-role/jwt-role-ymeo43ip",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 20235,
+        "Description": "",
+        "Timeout": 60,
+        "MemorySize": 128,
+        "LastModified": "2026-05-15T05:49:48.000+0000",
+        "CodeSha256": "HK8k+VKW1So9sv6m5WLOasX3BEJO96opTyhrw1MqyGI=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "ZOHO_CLIENT_ID": "1000.KUA5RHAJZ3IL70TBNZ2SDOKNRAUTNV",
+                "ORG_ID": "60021508863",
+                "ZOHO_CLIENT_SECRET": "8dc553bf36369177acc57a09be26836f29cd317933",
+                "GOOGLE_CLIENT_ID": "977710100466-qo5bjp5pp8932j9fobh36pgp0ejvqbr5.apps.googleusercontent.com",
+                "BASE_URL": "https://splunk-courses.softmania.in",
+                "ZOHO_REFRESH_TOKEN": "1000.d987dddd3c1a711f8e8f9c45795104d4.cbce76458aea60bc32a8d2c869c09777"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "18f0c3aa-147d-48c6-8b95-cd39a6d73177",
+        "Layers": [
+            {
+                "Arn": "arn:aws:lambda:us-east-1:813348525611:layer:jwt-layer:6",
+                "CodeSize": 5310322
+            }
+        ],
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:a0dd170e909c9230a7e18f978320f0053271b75d0b703c836ab4f98f2e3f6a5a"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/jwt"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/jwt-157a5c4d-5fef-463e-a1f5-0c619a9519ef?versionId=AlKyc6gJGCRLiYC9H_1_Y6.wRN1cQAYs&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDEnex9GmguUPXqGm94suEo0ZgcofLPaq7WyXv53rYs%2FAIhAJ2USlVCshmfUEMqQ3R%2F7aU1AMSrnmNgmz86y7eoYfJRKosCCGUQABoMNzQ5Njc4OTAyODM5IgyATqGMYV3U9b2%2B68Eq6AFtYcDZdpf1AAe2lCziaeAVBwR8bUeT71VeufF91Dk9jMgjw%2BcURcR9QuIOarPlWlNaJKFnSdQBXh8QUxeFWtzv5n0sMUrxpFGVC1JbIRV0YxU%2FhghC6ot7HpbSsovagRD7I5Ygub6z%2B8pL3bQbR5lLPXRV2JZPeEe8ZGLyJdLYwqBCZRTrm4ewWRRRAiko3F69pduVkOGZm8EsUMGXTySQAKWcGFCcnc76FkFYoV3E%2BSgtfaZ8GQSdPZ%2BH%2B%2B1jYxbVTLC2q2ypjz0IsmS1wSUmr3QZXxtsqfxg1TousjU7r%2Fbla0umeaIfMKPJmNAGOowB67A3oVDY%2F9tUQvbqZEh1MEZYn4vVxRPXxl%2BumOaXiuVionGi653MnTCre9Gi4zYz1vGIOe8YjgtXI0xZl%2BYEzkQ0uGVpj%2FdDJp66noPcUONftg5iUYhElpjVJUk3iVE67OIqea4Lza%2Bg2SUgfI3HgzGCdwVXpxODioNnHZUVmfifA3I9zgQ7DvMw73c%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260515T070654Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY3VOKOPJYO%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=6aae6110a01e4105dd541f4889c34c7468e15c80db96d0407d43fec08bfded37"
+    }
+}

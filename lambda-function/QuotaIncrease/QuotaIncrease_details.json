@@ -1,0 +1,44 @@
+{
+    "Configuration": {
+        "FunctionName": "QuotaIncrease",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:QuotaIncrease",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/Instance_management-DEV",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 1479,
+        "Description": "",
+        "Timeout": 10,
+        "MemorySize": 128,
+        "LastModified": "2026-02-14T12:50:59.488+0000",
+        "CodeSha256": "JdJGD5jfg4dm8mv1Vnu24YGu6Kns5lD+/djK1A8NXcg=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "48f0fe76-127f-4103-a43f-4c9e299f5755",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:56e5d40baed9b17e9a1012f98c2cdec3e35d0e94f29d4e345aaf41135da5d7ab"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/QuotaIncrease"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/QuotaIncrease-bb44ed23-9bfd-40a7-aa5e-bc67bd8432f5?versionId=Hlaw43yjnQQ6GK4u_keZR7Cu633IuJxc&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCICgmlKQlHh4JPl%2F8HVzSC5yQmdzY5dLgX%2FyGL4x0peE4AiEA7B6LGru7d9x19nAAF0s6hKFpPexb9TOPB%2BTv%2FBCnx9UqiwIIbxAAGgw3NDk2Nzg5MDI4MzkiDPLhWq98F2BIpvwnACroAceqtgYDdkVRi7GUyNKCzGNxL7hC6MixRDhxBMybfsIOQyRmOR1ODu1kGSQm06Ipot6TozL8cK088sMQfsQCf03QZo7zRxAqACQ5nZC%2BUVjCGS2mDvFGTj4aTQPMBE%2FkNCf%2F3fYR0ogENIyl39TgywNGVd9Xi7Rckc%2Fp3%2BGPPo0YbARrDopH5AELUgpHHad8Zn2%2BmaX4YZ4LssZY9sCIeJbq8Ir37Ib0WAjy2v%2F0m0oqEkE35pRWHIdDhMQrTRAiK6q7PyU0f43I9jE1w7LJPwz0IGNxULryP0OCt1hrtTPjYL9H%2FUsLMz0woPGa0AY6jQGhXNxMzcOz%2BlEdy8WDoIs45SmERmpOlVKu31ox5amx24LYv54YL6skG3TjfrdYAqs%2B5WDF3nqHYIYhPl786pF%2BGJ5PnetZJZVWVoU8E898z8ay%2B5UTyjamSqBjB9UwJf4WLlrBrHVPdC1UW7bcccnTqxd5i0SIryKyHxR8ETYNiroH1Fsf49LOfzx%2BKig%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260515T071549Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY3RPM7KQ4S%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e16002f751b0e7f95fb2aacd8dcf9cf84f3ad4342a1e338b40e71aee7d1b7567"
+    }
+}

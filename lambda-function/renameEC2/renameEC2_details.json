@@ -1,0 +1,44 @@
+{
+    "Configuration": {
+        "FunctionName": "renameEC2",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:renameEC2",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/Instance_management-DEV",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 869,
+        "Description": "",
+        "Timeout": 10,
+        "MemorySize": 128,
+        "LastModified": "2026-02-14T12:53:39.277+0000",
+        "CodeSha256": "lw9z+MNw6c7DYNk/0YGNA5PSOyza49yukABW5hCEC7Q=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "e9735ed3-b832-45db-bc84-4ce83ef93780",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:56e5d40baed9b17e9a1012f98c2cdec3e35d0e94f29d4e345aaf41135da5d7ab"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/renameEC2"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/renameEC2-4c34b491-7e83-4db0-b5b9-c53a35f2cffd?versionId=MNbPsR7sFS6IDhiUAG3ct_eiFBAEG9d.&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIDTrfOToqD0Yt91HsrgIkRyo4bNr5EMy6Mla5DiFk1B5AiBRsxzi3ODnFT%2F1EVYzzEGufUH1%2BYoKD4fK8Sm7%2FvJQvyqLAghvEAAaDDc0OTY3ODkwMjgzOSIMEOQPdc3%2BDF7NsoCRKugBxFMu79LA3FvVlN%2FobwJ5zVIpfNqdGwwTEPoEXxAvlqhULYsXWUVKngnOcmAsB9i48TPfd%2F18fYtsF66oKqMt7r%2FgGeVqHV82k%2BghOnYHWbnbgfhGQjBhe5BYp9%2FvFv3hCd4WSW4C%2FxGukCLVNKTqTvZLAKX5SMnq3C%2FZbjHCTXVL83fdngbvp0enk3KLGDoosnkbpuejhlxC5Oura6qKLGMi%2FOQR4t6SnpCC%2FPHv3dy4p4XLp8Iz7bnlSeCk76SNoPBM5WwlriiTdpu8KPpt9zCMFo4N3Hs0uDQY744N3imvv87lidj%2BjzCz7ZrQBjqOAWY4xhH7VVTZh7xQ2XKvnj84rf6tbpRJdi5hnK9ZdZ7wkSaVa3%2BmvrkM9vK8ZHcZ25%2BGFp11TL%2Fa%2BruWXNVsiIrXlGETKLQwceHsncu%2Bh33YHciBNxLL0b8f53FczJJttxjIGicszvxO4lCfaPv%2FDhiLjRNebuPL%2BfhJKdvqqoJI6xD%2BBFeUsbgAUVGbG%2Bo%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260515T072341Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY33LSR5HG7%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=552b7bd30b3cffd379f3067eea12dc125d8620df8d4c93baa5f489a46fca9199"
+    }
+}

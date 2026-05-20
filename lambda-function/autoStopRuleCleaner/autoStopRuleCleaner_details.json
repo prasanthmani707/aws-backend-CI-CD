@@ -1,0 +1,44 @@
+{
+    "Configuration": {
+        "FunctionName": "autoStopRuleCleaner",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:autoStopRuleCleaner",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/LambdaEC2StopperRole-DEV",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 1115,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2026-02-14T12:50:45.771+0000",
+        "CodeSha256": "NM2Z5Fh57z0TtZPmurUwmhVUiOeas2fiY556PWk6Sz8=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "5e218252-c6a1-4d5e-ba57-76735b43c21d",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:56e5d40baed9b17e9a1012f98c2cdec3e35d0e94f29d4e345aaf41135da5d7ab"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/autoStopRuleCleaner"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/autoStopRuleCleaner-048ce5bb-796b-44aa-90b0-55f7158a1ff8?versionId=Z.IuOFZHpOTdxL9lXXdCZR3DAc.D7pbK&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIBq7kG9RR8%2FqD4i4qrgxeeRfMIjGlAZqzuzhjee5y9w0AiEA7gOoJYhhahG3r2h3W%2BTFt%2BtGliof3t8pIVaMJljvNboqiwIIZRAAGgw3NDk2Nzg5MDI4MzkiDKdlugZ%2BBKvFxmHtdSroAY3zrFlshXMr5Z2kfaboI0W2EeCQdAKd4jdAGw0o2bUvTyAgfUXd%2BEIb3ezaLXaijLJ%2BLvRQlDsn70BT2gnW0Xa9sF73RkY7SzjXmp%2FMmFiFqYBdZS5m%2Fr8eVyxGH0PIFFzuw17PI6lU45pt%2Bxr3UI%2BLW4%2BewjBixLKLHaU8Eg%2BuBSRythmF0fTc1oh8I2%2FDAdvKKbuFNGFyKFqgEKj%2FCfR1uFt1%2FcJsNZlVK5hNozqD7XKY8C4ER2aC%2FYIbjP9WaWtDpd3GDybawcPm6D4VSljFYhcHBCqs0qHk3bAWq9onYoBBCZHBsVowttGY0AY6jQHeKyZRxxYOOXv6iQouy%2FZWLlsfoB%2BYk9bCaD98%2F5jhwn1CrkUgc5WF0rKSFGlXWIo%2FrzdXWvYQE4eJxAAhbLVF4JHPJLbv1N4cheqXIVYa%2Bcabo2cO7H%2F%2FoizyIQ3pShIPmvgTg%2FR3SlnhAciYBoDbN2yqgaBNFCQBQcJS43%2FRERrWSeJWTXWOYVdkJKg%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260515T072027Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY3332PSVGN%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ade8c35ab71f8aee7b18f3aa09bbbb3a044f7cfeb42ac32894cec54f4dc36b3a"
+    }
+}

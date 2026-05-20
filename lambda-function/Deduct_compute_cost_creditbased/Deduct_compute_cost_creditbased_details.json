@@ -1,0 +1,44 @@
+{
+    "Configuration": {
+        "FunctionName": "Deduct_compute_cost_creditbased",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:Deduct_compute_cost_creditbased",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/Deduct_role_creditbased",
+        "Handler": "handler.lambda_handler",
+        "CodeSize": 2156,
+        "Description": "",
+        "Timeout": 60,
+        "MemorySize": 128,
+        "LastModified": "2026-03-30T10:26:53.000+0000",
+        "CodeSha256": "PXpUfvDgEE8rI3ZllvffipyeZWtkcCFynXj5QvXQSbk=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "d2c9c48b-a2d5-4555-a610-fb18ca5a8843",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:12c1c1e1d4c41cba0a5e763352949658de937342635ea05d78eaffaccc8bb350"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/Deduct_compute_cost_creditbased"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/Deduct_compute_cost_creditbased-a5693b0c-8fbc-4eb3-badf-3a57f7e2176d?versionId=ClnQV5umED9OyptSKMxXGiBjAdrNVhkC&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQCtysSXlhmccpV68J5dIEbtSYTMhbhJvqbalO0hCl%2BBwAIhALSlgUyw2Q9xk3JuZbgOYQ6%2F3U81U%2BT3IpA%2F1Q%2Fdex59KpQCCMP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNzQ5Njc4OTAyODM5IgwocVa%2FMfi9fN4x3TQq6AHXmExsSDtLpVqWoW%2BlT9%2F6LyLGyGIkWQ8H1GGWK4b4X98Rjx8vvrMPfq1ULzfOr5cL%2FrPUGIYROr5WcuHQKCZDRehhQ1eKcSHWRnRNN58bRZEDCGTmEmHZqpyoq%2FR3MJXTGMaQLWzBWCcpe6TxaK7UNl1tpwfUn0Z2eryXfn%2FDS4yEoOgR7zSf%2BMtSlMJuI%2BJ4yme9OQH6xK9q6kHvb%2B2zAGOtkZ16DTLJUvvWVvwIScLIJZLPSiLOlBYIgL5xlv8gfEystg%2FcnqGpTt03WlAq0eb8BxmZxLZ0vflI4sYXTACX0HCxz4hQMIekzM4GOowBrMtIZzys6CVrM5LIRRxzXL6SlYPqHgA5ztIS87fB96dvA17Cbln%2BjdBPfG5bzFT7teVDJyV%2FREv6N77dyktnYLoKkWqK2o%2FuYm4E4oR%2BokB74stz%2BeYpk6XW5zearjro71Pz%2BYKPPb%2F%2F8GHxLfjQA8NWQLBsRZHKostuCSRccBizSNKxqbQSssKy%2BPY%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260406T083551Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY3TXKN6TAT%2F20260406%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=48e6eb1d10846de9a169df217542e30c646fe7149290a30db00633aa583912ae"
+    }
+}

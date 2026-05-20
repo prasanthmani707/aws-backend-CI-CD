@@ -1,0 +1,44 @@
+{
+    "Configuration": {
+        "FunctionName": "Get_instance_costdetails_creditbased",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:Get_instance_costdetails_creditbased",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/userwallet-DEV",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 573,
+        "Description": "from pricing catalog geting  the per_hour storage cost and compute cost to UI  creditbased",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2026-03-09T14:57:25.000+0000",
+        "CodeSha256": "rOCVBafxwkw/+cDYhAxWStLvKdd/DpOFeAoSiHdVIX8=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "84898789-e8cc-4ae4-9805-cdda50749550",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:b0f2d40716005f99e1e65ab9c4ba4749be69e8c44df93eecbb62a1fff12bd80f"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/Get_instance_costdetails_creditbased"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/Get_instance_costdetails_creditbased-0f7a3c1e-f29d-4e64-a874-4551f4b56855?versionId=kZkl7DUfNjTDDyqdKPQ9pwdW_f3Gt8wJ&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIChaetiW5kGfakXwHdbj9L%2FfblpR77hWD%2FUiRJHCLrNAAiEA5gGGMxdMZYuM5I1tiq6gt4OF9f3GfUzVtHEOXTJ9opwqlAIIvv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw3NDk2Nzg5MDI4MzkiDK2BM9Hzk%2Fp9LPsALiroAfbyPkFZhURy8vMoDDMlwKQnAecbw74K5QfGsy8%2B2v06ImPwGMwewQwCe705V1ci%2BHHTGyunvGF%2FVjqX2jubGNHeoJZuwuGQp9SPETdS9lKd4668aFz9G6ZZk%2FVLny%2BC0l984eWSV%2BSNA0ovu%2FV7OsV%2Fjpg7qxkq8DexpjjblqdMBfAbJj5vcgDFo0D0ZhkW%2BxkJtS0CjhgFQkJDjr9rk7jvCwRMGrk2Dt7hc4a2ANETW%2FdbiJI4EnUOpyCwKsiczsJdva%2ByG178TqIufDprKUMF2XAJMLfhnG2Zn2yyAPi7hN7skZHGGQAwvZnLzgY6jQEva7rKlYEKw6dy2prqhl6f1sKUZHlyRxd3S7szK9GJhByfKwHcScYO0TUDU8iFv8b1FMO5BKDCmJiznbQmkq5N1sJpompWswnae%2FY6QMEhJHj97gTiJX1HD%2F0cezxK6Uw%2BcK7UH9%2B9B%2FUdlpcChZYb7CHFHn%2FXbSBp3bn5PH9%2F%2Bt9oww46aVsBNMAW3ik%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260406T082805Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY3ZXEH7WCM%2F20260406%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a775a5eea7d1244833a14376417916b30ed791624ca677d39a7825a4e77c8707"
+    }
+}

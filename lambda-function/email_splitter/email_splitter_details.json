@@ -1,0 +1,50 @@
+{
+    "Configuration": {
+        "FunctionName": "email_splitter",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:email_splitter",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/userwallet-DEV",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 1240,
+        "Description": "",
+        "Timeout": 60,
+        "MemorySize": 128,
+        "LastModified": "2026-02-14T12:52:57.573+0000",
+        "CodeSha256": "O3iWeJU1dQOXx9MZp1aJ77gQPHx8eOOH5/AvIRtXKN4=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "2f9db767-336b-486d-ba57-f539e8c027c7",
+        "Layers": [
+            {
+                "Arn": "arn:aws:lambda:us-east-1:813348525611:layer:requests-layer:6",
+                "CodeSize": 1064619
+            }
+        ],
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:56e5d40baed9b17e9a1012f98c2cdec3e35d0e94f29d4e345aaf41135da5d7ab"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/email_splitter"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/email_splitter-cee454ba-f17c-489f-9e2f-a726be6342dd?versionId=kHqblJRFjmeIfGZiN2wDCbkmKJhjNx1L&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIFgz18BvnyYpwFRVBxG5C3fUesMtgmOAINRMicubifU9AiAfJOIzZulknBRr%2BNY2kwGuYwEad0gQ7FMHtoa2Lzxn8yqLAghvEAAaDDc0OTY3ODkwMjgzOSIMZ%2Fjrytl9RAYaCHNjKugB7ZNg7%2BSinlqr%2BC8mEz2GD37s%2BDB0SE%2BX%2B3ZK71lm%2F97BFY8LmOzOfvApKokcX9JI8xATf0sIhpeofkjZO7dHSUtuV5A9hf8ad0NAQgkpJ3pzR2DQ8HvRAYv%2FcDJ96eqdjQ4NHHqR3mVYSnsJRO2319QhF%2B%2FAgibDnzUbfQ3QLrWDmUrqf2jGVlyo1GNXbSYJjvGwIqGITLRjbBiNwH5cvurA9LXir4K0ggDp1blk%2B7XKjfB6qpUPdYRMTYoc0Kkmc0NAGjM4mKX7UYlELejLVBWMFYGJOz0U%2FiEgU6DrbCtVTG7ORAIlbDCZ5prQBjqOAcfAjtrzItj2NzYlkc4DW%2B2uT1WlCegfeg3gqp8rMH6gzR16b1R2mrg2sNMfwsPo%2FmiwjQSeDH6QzVTolQVszpTekDlG3AsQX%2FoJoEvJPnkymbMeenhne%2Btp55vdYqo8xSJU3SL1zcM7Ue6HlP9FDPEdHiOxjbcpdUugSnEyt8PyBm1x3MWv0rohE7UPUPE%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260515T070817Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY32NJUBVYV%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=c2f214c02d81e7cd37fdf684c5543758a42dcd8c3eaa773ffde26fbcca586210"
+    }
+}

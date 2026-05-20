@@ -1,0 +1,50 @@
+{
+    "Configuration": {
+        "FunctionName": "schedule-ec2-stop",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:schedule-ec2-stop",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/LambdaEC2StopperRole-DEV",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 1124,
+        "Description": "",
+        "Timeout": 10,
+        "MemorySize": 128,
+        "LastModified": "2026-02-17T13:21:30.000+0000",
+        "CodeSha256": "6YJtq7fgbwwAnqsYyn7akr+kinVu0ZdWWmpj8psJQy4=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "SCHEDULER_ROLE_ARN": "arn:aws:iam::813348525611:role/eventbridge_instance_schudule_role-DEV",
+                "STOP_EC2_LAMBDA_ARN": "arn:aws:lambda:us-east-1:813348525611:function:stop-ec2-instances"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "205d8338-d86f-4993-aad0-9c57d013c11d",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:56e5d40baed9b17e9a1012f98c2cdec3e35d0e94f29d4e345aaf41135da5d7ab"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/schedule-ec2-stop"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/schedule-ec2-stop-69611c39-6a12-419e-820f-2b091d8497e6?versionId=1s9gW61PlalOCCEPqSDABS7AMcfriZZ3&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIDdBJ40%2BFOSQjCnYwWtNDmwOO8UyTI1nbuQE52dz73VeAiEAoqV%2FQH2LLjXQc2f4ZZDColj9bhxchVsdX%2FXO5szG7j0qiwIIZRAAGgw3NDk2Nzg5MDI4MzkiDCA02J4bD9bjIjMP3CroAW6lBPsYOQ9PmEsQleQaqTGFNUZeLU6OILng3Oql1WTTXyRaRvWrdK4uYpfvOqganNuhlKxl0y0HWaYi2KJUHj%2FtBEkvdfQkwodwkWSty6PWNvMqvKWorygSzAKUtsuMF9X6r8npvas6LqK1zv5lAiog6JWQ3p16iNI4bYj3HrWU4cjymFQu%2B4eqiwdjGQyxgmx5%2F16dNtjEofQa56Zdt16c4qNR%2Fbc%2BHbagCB2%2F1j8ONrMfKXAYJKsKpFfejdB%2FSc8UypmT3tuSBUZiMpmu%2FgZDcpnCp%2BFpp7HcyWVGoQq29zOEmRwpJ3IwtNiY0AY6jQFIQY6zmyXFrKoGQREzTXYsCuLOwo2FYsmB4buccaR7dSO9jJxMfi0nWxZoIv51ywH%2FP9cA00R9z2fRvq7bOYCdj6txwqTLYdAIVVTo2549cPrrTrOUaR6RwwvH9s7OAEwWMVW%2BJHZr7etO1GH66PLiyDBxbXxW8VImNYtnzt50MrfwDvzEvSgHryAbsj8%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260515T071610Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY37D4D25Q5%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a1bf7d54e0f773568bc040dc643085d2b3a771eded6c85ceb37660b3891d9d31"
+    }
+}

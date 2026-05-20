@@ -1,0 +1,44 @@
+{
+    "Configuration": {
+        "FunctionName": "logUserLogin",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:logUserLogin",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/EC2QuotaCheckerRole-DEV",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 812,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2026-02-14T12:53:11.353+0000",
+        "CodeSha256": "kw2pyUVV6UvAnl5e2+e0NHL2QdCbk4nM7PnJfqxzgao=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "d7ada410-899b-4210-afa6-28810a0fe20a",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:56e5d40baed9b17e9a1012f98c2cdec3e35d0e94f29d4e345aaf41135da5d7ab"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/logUserLogin"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/logUserLogin-6f1e6a8d-bf61-492d-ad22-1c2772f81d7d?versionId=vy0Ox.FdZ.zAqr.f5mGscOso9iATFz0C&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDNxeVYf8pQBEqlqqjzgqIG6SZ3I48ZPD5nvkYCSL04HgIhAOqHqrt3tLgjYZSTqQFSaISmWj4EoQVyaqyc7GY4EdFRKosCCHAQABoMNzQ5Njc4OTAyODM5Igy6DU98SpXYQvhzGp8q6AGNFLuqDQGdyDmqfcRQRmiiIiCH3zMAhtXJta7QqFXsz4Blljy%2Fn5PtvMPjNI8R%2BRgHmhtk8Y8R3VyxJG7HNhUb2%2BEnMxiWFwdkI9kif7Rui1K6Qy9ithT6MoDjx4zWzgXUJbFwk865JOCEBqIzqDE%2FwJsReTEhyExKMBl6GMuhTql5psPp98C2hld%2F%2FdF49RpqichFCC7%2Ft3Go3kbI92a9jfr3ooEUEaJyHmqz5xvJ5ZiEghddSvB4fuLzyAUBuxM%2FzkBLO9wfqde4fTeWQg1r%2Fnszi4GGg4vQ3riL1Glf8kml50X7ubcUMPj4mtAGOowBD%2FJ6G5cYWqpkvN62b4bGkOJDBTLAQ0UceLxebUwr3F%2F673AoTcL%2FKzrbsRthzkiYHYeWvtmgvlXoL6mtxVx91o1E5Q%2BcwmgH7viuXkUH23O%2BKY7brGYz%2BMxOfTAj0mPKrgbnGWBBP1MNwp3%2FUpy0%2BIAh7liuZcgQyr%2FsY8u5PKbSUyjtjeXcWuZOEWM%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260515T072721Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY3RRACZ5IJ%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=96d608f9c04faa3431fe2d5e050bf37215e6381bdc1e951e491673fc31c85128"
+    }
+}

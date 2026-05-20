@@ -1,0 +1,44 @@
+{
+    "Configuration": {
+        "FunctionName": "Codebuild_environment_status_update_creditbased",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:Codebuild_environment_status_update_creditbased",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/codebuild_status_updater",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 1712,
+        "Description": "",
+        "Timeout": 10,
+        "MemorySize": 128,
+        "LastModified": "2026-03-10T06:47:56.000+0000",
+        "CodeSha256": "nDhBf350s6Iy0ReYTCDZV684eBaJ8iR510oHKtg+JE0=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "6251ad01-d95d-4919-a13c-9807634b2bb7",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:c51a1796965c4cd7cb4442b973dd7819a70e317fdcb47e87a778352dbbd09749"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/Codebuild_environment_status_update_creditbased"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/Codebuild_environment_status_update_creditbased-75415f79-18a1-49cb-8908-8b17b6a82244?versionId=wAhgXpwzfQaB7Y7j3TK4FuYFIg8U3moC&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQCjREjk03alOQS3KBywHmobSqH8WLaxlkADTx6w%2FLGQpgIgc131jpTX6DZgH0po1qmVP8Bs9Fcvxm%2Bw4kMT8KjPmTsqiwIIZRAAGgw3NDk2Nzg5MDI4MzkiDLUHst4gU9S%2Fu2ai3SroAW7AI44nUvCJhh8%2B%2FYVGpSxq3cxdVOOXSoB2QDnlepqUG7ynWszjBKE1zfYkE3y%2Fu5bThBB7v7u%2B9FiAn1pHA5GOsdypReikO%2FS%2FSTPyhBGYCl8nVnEuFSAE6k%2BnA21NkzmSIGn6NlZytcRUB2ojFcdrEzebLs1TnWE2ygDpiaOJAIIAjdMDih1Magzd3eYKbwD%2Ftl%2BRH3di5qvfeb9YTJ8TgaB5qQJc0aJ8frHJeY3NobI36LN5pi0YJaxqYwvbYDZICc5ol%2FnFmhSgBEBeOc3SFtaP3vy6yPYcNCY8h5xaLL2MgSDapPQw28qY0AY6jQHX26bkTkpmGPIyJtLuaa5j1TztXNCJ1wZufiWabjUNNMEU5BcS7hQFOlfypSjQ9l1ABK8xBGXCTF2%2F0vDJoRGmsyjGA214fIXE8NCAr9h9gk9J%2B1ZygqeWeDRhoFm3Mv%2BkBFaKVt5eZc7yX%2BsqGFUDOUt%2FwwClgu3nXG5i6XEW5q2nUyIOubZbtRHxFuE%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260515T071111Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY37XPIE7IO%2F20260515%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=63ba2817b16abe627cebe9062a4dbf5133ab7132ccd3fc2076e42504587f72dc"
+    }
+}
