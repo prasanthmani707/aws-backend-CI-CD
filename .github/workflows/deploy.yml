@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'Environment_creation_creditbased/**'
+      - 'lambda-function/Environment_creation_creditbased/**'
 
 jobs:
   deploy:
