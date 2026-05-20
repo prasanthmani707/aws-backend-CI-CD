@@ -22,13 +22,25 @@ jobs:
           aws-secret-access-key: ${{ secrets.DEV_AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-      - name: Create ZIP
+      - name: Get Changed Folders
+        id: changed
         run: |
-          cd lambda-function/Environment_creation_creditbased
-          zip -r function.zip .
+          CHANGED=$(git diff --name-only HEAD^ HEAD | cut -d/ -f2 | uniq)
+          echo "changed_folders=$CHANGED" >> $GITHUB_OUTPUT
 
-      - name: Deploy Existing Lambda
+      - name: Deploy Changed Lambdas
         run: |
-          aws lambda update-function-code \
-            --function-name Environment_creation_creditbased \
-            --zip-file fileb://lambda-function/Environment_creation_creditbased/function.zip
+          for folder in ${{ steps.changed.outputs.changed_folders }}
+          do
+            echo "Deploying $folder"
+
+            cd lambda-function/$folder
+
+            zip -r function.zip .
+
+            aws lambda update-function-code \
+              --function-name $folder \
+              --zip-file fileb://function.zip
+
+            cd ../../
+          done
