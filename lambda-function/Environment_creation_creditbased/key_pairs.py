@@ -24,7 +24,7 @@ def check_s3_key_exists(username, key_name):
 
 def create_ec2_key_and_upload(username, base_name):
 
-    clean_username = re.sub(r'[^a-zA-Z0-9]', '', username)
+    clean_username = re.sub(r'[^a-zA-Z0-9]', '-', username)
     clean_name = re.sub(r'[^a-zA-Z0-9]', '', base_name)
 
     print(clean_name)
