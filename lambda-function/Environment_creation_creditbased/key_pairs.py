@@ -6,7 +6,7 @@ from botocore.exceptions import ClientError
 ec2 = boto3.client("ec2")
 s3 = boto3.client("s3")
 
-BUCKET = "splunklab-wizard-prod"
+BUCKET = "splunklab-dev"
 def check_ec2_key_exists(key_name):
     try:
         ec2.describe_key_pairs(KeyNames=[key_name])
