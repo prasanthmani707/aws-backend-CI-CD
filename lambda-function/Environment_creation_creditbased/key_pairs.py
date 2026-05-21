@@ -2,6 +2,7 @@ import boto3
 import re
 from botocore.exceptions import ClientError
 
+
 # AWS clients
 ec2 = boto3.client("ec2")
 s3 = boto3.client("s3")
