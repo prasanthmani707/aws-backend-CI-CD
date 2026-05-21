@@ -7,7 +7,7 @@ def get_splunk_version(body):
     raw = body.get("splunk_version")
     if not raw:
         return ""
-    return re.sub(r"[^a-zA-Z0-9._-]", "", str(raw).strip())
+    return rew.sub(r"[^a-zA-Z0-9._-]", "", str(raw).strip())
 
 def build_versioned_prefix(base_prefix, splunk_version):
     if not splunk_version:
