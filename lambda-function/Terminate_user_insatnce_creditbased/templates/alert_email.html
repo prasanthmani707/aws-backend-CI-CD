@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            background: #dc3545;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 25px;
+            color: #333333;
+            line-height: 1.7;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .info-box p {
+            margin: 8px 0;
+        }
+
+        .warning {
+            color: #dc3545;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+            color: #777777;
+            background: #f1f1f1;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #dc3545;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h2>Low Credit Alert</h2>
+    </div>
+
+    <div class="content">
+
+        <p>Hello,</p>
+        <p>
+            This is an informational notification from the SoftMania Support Team.
+        </p>
+        <p>
+            Your account credits have dropped below 
+            <span class="highlight">500 credits</span>.
+        </p>
+        <p>
+            Your services are currently in a stopped state, and storage charges for those resources
+            are continuously deducted from your available credits.
+        </p>
+        <p>
+            However, if additional credits are not added before the expiry date,
+            all associated servers and resources will be automatically terminated
+            on the expiry day.
+        </p>
+
+        <div class="info-box">
+            <p><strong>User:</strong> {{email}}</p>
+
+            <p><strong>Expiry Date:</strong> {{expiry_date}}</p>
+            <p><strong>Time Remaining:</strong> {{formatted_days_remaining}}</p>
+        </div>
+
+        <p class="warning">
+            Please recharge your credits before the expiry date to avoid service interruption.
+        </p>
+
+    </div>
+
+    <div class="footer">
+        This is an automated notification from the Credit Monitoring System.
+    </div>
+
+</div>
+
+</body>
+</html>

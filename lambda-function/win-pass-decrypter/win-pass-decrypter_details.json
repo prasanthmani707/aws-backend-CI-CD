@@ -1,0 +1,44 @@
+{
+    "Configuration": {
+        "FunctionName": "win-pass-decrypter",
+        "FunctionArn": "arn:aws:lambda:us-east-1:813348525611:function:win-pass-decrypter",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::813348525611:role/windows-pass-get-role-DEV",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 3105074,
+        "Description": "",
+        "Timeout": 10,
+        "MemorySize": 128,
+        "LastModified": "2026-03-12T07:52:55.000+0000",
+        "CodeSha256": "NZmQz756n76oM38iihBTELumMPdZZVyay94BK/4uJEQ=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "669cd9aa-5095-41e3-8cea-736ff7c9102b",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:c51a1796965c4cd7cb4442b973dd7819a70e317fdcb47e87a778352dbbd09749"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/win-pass-decrypter"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-04-2014-tasks.s3.us-east-1.amazonaws.com/snapshots/813348525611/win-pass-decrypter-613c524e-e15a-4747-921e-7bea19c6bb82?versionId=xgLKxyJoMODBvpF2sJM9hA5meT9Z512K&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIG6%2BMjFUC%2FDddtQ%2B2MV46VALnShuVkgYe6V9AkmgiknFAiBdXzBhB%2FLDLuptTiRcmjxv%2FxbkIeIjUkCZY3lEnn5dFSqUAgjE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDc0OTY3ODkwMjgzOSIMdkXmQN2hSqdlx8hdKugBjjGe4JQtACKGgyqBPIXYFdpeF9cnHn5M%2BUpvnieL%2FdNTyY4uDYnfbSUP3AauC2CFR%2BZcxdw2qT5YOdBK5JgZdM3AZN6npJ1O%2BrNI4SIO%2FsaWQewrA8hS56QyRGk%2F%2FvmSRBREaAVUf9djpg4DejLiT84dZ1yPzvh3caVDMY1JUuCwZUGEMuVfY0X07fwhA0Kssh7xhWexYlIyDn%2B6MfMhEoBXwZoihH%2B7qHaOEgNHsXYxEQ9asxYcPFhsQrL%2BcEkeYAYZBxC%2FPuzYIFjDVy4aE0f97wcV2xj6TFijl1ncFyX4XyiDWOL1ITCLnfXPBjqOAbQNwivN8YRCJ4ffS5S1xx6EsJKUjGEfE%2Bh9xKsm%2F%2F%2FZPLoGUvRanEDIP6Ub2E0X%2BDIKXh1gx2qF%2FBcudH4%2Br3PgWCVRlmc8UG6pdj2wN2erFsJ0NNNAHKElBc3L2pXXOv57oScSnd%2B6PK7Hxc0xPQFVuxoDF7kkA8cNW1pmMS%2Ff7JD8bCoLGSZwQm2VxJU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260508T101606Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA25DCYHY3W76ZFKDO%2F20260508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=8ab78847b91bb3142f1fed392b6b8dfd8203004db748f50a5d44dcf6c42df2f4"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "membership_percent": 33,
+    "_comment_membership_percent": "Percentage of total membership",
+    
+    "management_percent": 30,
+    "_comment_management_percent": "Percentage allocated to management",
+    
+    "platform_credits": 0.0520,
+    "_platform_credits": "Daily backend cost in dollars (x2)"
+  }
