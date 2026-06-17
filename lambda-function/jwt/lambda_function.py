@@ -5,9 +5,7 @@ from checkuser import check_user
 from auth_jwt import create_jwt
 from verify_google_token import verify_google_token
 from update_db import update_db
-from dotenv import load_dotenv
-load_dotenv() 
-
+# from showcase_user_create import create_showcase_community_member
 
 def lambda_handler(event, context):
 
@@ -27,6 +25,8 @@ def lambda_handler(event, context):
     # ==========================================================
     # CHECK USER / LOGIN
     # ==========================================================
+
+
     if path == "/user_profile/checkuser" and method == "POST":
 
         print("LOGIN FLOW STARTED")
@@ -60,6 +60,8 @@ def lambda_handler(event, context):
         print(f"Authenticated user: {email_id}")
 
         user_result = check_user(email_id)
+        print("community member user profilr details   :   ", user_result)
+
 
         if user_result is False or (isinstance(user_result, dict) and user_result.get("status") == "error"):
 
@@ -71,9 +73,6 @@ def lambda_handler(event, context):
                     "message": "User not found" if user_result is False else f"Database error: {user_result.get('message')}"
                 })
             }
-
-        if "body" in user_result:
-            user_result = json.loads(user_result["body"])
 
         user_data = user_result.get("data") or user_result
         if isinstance(user_data, dict):
@@ -115,6 +114,8 @@ def lambda_handler(event, context):
     # ==========================================================
     # USER ADD
     # ==========================================================
+
+    
     if path == "/user_profile/useradd" and method == "POST":
 
         print("USER REGISTRATION FLOW STARTED")
@@ -156,6 +157,21 @@ def lambda_handler(event, context):
         print("Zoho user creation response:")
         print(create_user_response)
 
+#         print("Creating showcase member...")
+# `
+#         portfolio = create_showcase_community_member(
+#             body.get("name")
+#         )
+
+#         print("Showcase response:", portfolio)
+#         if portfolio.get("success"):
+#             body["profile_showcase_id"] = portfolio.get(
+#                 "memberId"
+#             )
+#             print(
+#                 f"profile_showcase_id added: {body['profile_showcase_id']}"
+#             )
+
         db_response = update_db(
             email_id,
             body
@@ -191,7 +207,8 @@ def lambda_handler(event, context):
                 "joined_dc_community_group": db_discord.get("joined_dc_community_group", False),
                 "discord_dm_verified": db_discord.get("discord_dm_verified", False)
             }
-
+        print("===== USER DATA BEFORE JWT =====")
+        print(json.dumps(user_data, indent=2))
         token = create_jwt(user_data)
 
         print("User registration completed successfully")

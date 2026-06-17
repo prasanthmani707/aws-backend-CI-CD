@@ -2,8 +2,6 @@ import time
 import os
 import boto3
 from safe_request import safe_request
-from dotenv import load_dotenv
-load_dotenv() 
 
 # ---------------- CONFIG ----------------
 
@@ -91,7 +89,7 @@ def get_zoho_access_token():
 
         res = token_table.get_item(
             Key={
-                "token_type": TOKEN_TYPE
+                "token_""type": TOKEN_TYPE
             }
         )
 

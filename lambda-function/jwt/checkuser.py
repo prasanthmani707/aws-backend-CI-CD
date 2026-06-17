@@ -41,9 +41,9 @@ def check_user(email_id):
         print("[STEP 1] Checking CommunityMembers...")
         res1 = community_member.get_item(Key={"email": email_id})
         com_user = res1.get("Item")
-
         if com_user:
             print("[FOUND] CommunityMembers")
+
             return {
                 "status": "found",
                 "source": "community_member",
@@ -51,21 +51,21 @@ def check_user(email_id):
             }
 
         # ======================================================
-        # STEP 2: CreditBased
+        # STEP 2: CreditBased  -  migrated creditsdb into community memeber db
         # ======================================================
-        print("[STEP 2] Checking CreditBased...")
-        res2 = creditbased_member.get_item(Key={"email_id": email_id})
-        print(f"user email is present{res2}")
-        credit_user = res2.get("Item")
-        print(f"credit user {credit_user}")
+        # print("[STEP 2] Checking CreditBased...")
+        # res2 = creditbased_member.get_item(Key={"email_id": email_id})
+        # print(f"user email is present{res2}")
+        # credit_user = res2.get("Item")
+        # print(f"credit user {credit_user}")
 
-        if credit_user:
-            print("[FOUND] CreditBased")
-            return {
-                "status": "found",
-                "source": "creditbased_user",
-                "data": credit_user
-            }
+        # if credit_user:
+        #     print("[FOUND] CreditBased")
+        #     return {
+        #         "status": "found",
+        #         "source": "creditbased_user",
+        #         "data": credit_user
+        #     }
 
         # ======================================================
         # STEP 3: TrainerCentral Lambda

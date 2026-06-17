@@ -61,9 +61,15 @@ jobs:
           do
             path=$(jq -r --arg folder "$folder" '.functions[$folder].path // empty' .github/lambda-deploy-map.json)
             function_name=$(jq -r --arg folder "$folder" '.functions[$folder].functionName // empty' .github/lambda-deploy-map.json)
+            enabled=$(jq -r --arg folder "$folder" 'if (.enabledFunctions // null) == null then "true" elif (.enabledFunctions | index($folder)) then "true" else "false" end' .github/lambda-deploy-map.json)
 
             if [ -z "$path" ] || [ -z "$function_name" ]; then
               echo "Skipping unmapped folder: $folder"
+              continue
+            fi
+
+            if [ "$enabled" != "true" ]; then
+              echo "Skipping disabled folder: $folder"
               continue
             fi
 

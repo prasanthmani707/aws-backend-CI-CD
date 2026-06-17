@@ -1,4 +1,7 @@
 {
+  "enabledFunctions": [
+    "jwt"
+  ],
   "functions": {
     "Add_Credits_By_Admin": {
       "path": "lambda-function/Add_Credits_By_Admin",
