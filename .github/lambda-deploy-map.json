@@ -1,0 +1,128 @@
+{
+  "functions": {
+    "Add_Credits_By_Admin": {
+      "path": "lambda-function/Add_Credits_By_Admin",
+      "functionName": "Add_Credits_By_Admin"
+    },
+    "adminverify": {
+      "path": "lambda-function/adminverify",
+      "functionName": "adminverify"
+    },
+    "checkUserLab": {
+      "path": "lambda-function/checkUserLab",
+      "functionName": "checkUserLab"
+    },
+    "Codebuild_environment_status_update_creditbased": {
+      "path": "lambda-function/Codebuild_environment_status_update_creditbased",
+      "functionName": "Codebuild_environment_status_update_creditbased"
+    },
+    "Compute_Credits_Creditbased": {
+      "path": "lambda-function/Compute_Credits_Creditbased",
+      "functionName": "Compute_Credits_Creditbased"
+    },
+    "Credits_Rate_Creditbased": {
+      "path": "lambda-function/Credits_Rate_Creditbased",
+      "functionName": "Credits_Rate_Creditbased"
+    },
+    "Deduct_Compute_Credis_creditbased": {
+      "path": "lambda-function/Deduct_Compute_Credis_creditbased",
+      "functionName": "Deduct_Compute_Credis_creditbased"
+    },
+    "Deduct_Storage_Credits_Creditbased": {
+      "path": "lambda-function/Deduct_Storage_Credits_Creditbased",
+      "functionName": "Deduct_Storage_Credits_Creditbased"
+    },
+    "EC2_user_quota_checker_creditbased": {
+      "path": "lambda-function/EC2_user_quota_checker_creditbased",
+      "functionName": "EC2_user_quota_checker_creditbased"
+    },
+    "Environment_creation_creditbased": {
+      "path": "lambda-function/Environment_creation_creditbased",
+      "functionName": "Environment_creation_creditbased"
+    },
+    "Get_Instance_Creditsdetails": {
+      "path": "lambda-function/Get_Instance_Creditsdetails",
+      "functionName": "Get_Instance_Creditsdetails"
+    },
+    "get_provisioning_status": {
+      "path": "lambda-function/get_provisioning_status",
+      "functionName": "get_provisioning_status"
+    },
+    "Instance_sg": {
+      "path": "lambda-function/Instance_sg",
+      "functionName": "Instance_sg"
+    },
+    "Instance_tracker_creditbased": {
+      "path": "lambda-function/Instance_tracker_creditbased",
+      "functionName": "Instance_tracker_creditbased"
+    },
+    "jwt": {
+      "path": "lambda-function/jwt",
+      "functionName": "jwt"
+    },
+    "list_instances": {
+      "path": "lambda-function/list_instances",
+      "functionName": "list_instances"
+    },
+    "pem-files-get": {
+      "path": "lambda-function/pem-files-get",
+      "functionName": "pem-files-get"
+    },
+    "Per_environment_instance_ids_updation": {
+      "path": "lambda-function/Per_environment_instance_ids_updation",
+      "functionName": "Per_environment_instance_ids_updation"
+    },
+    "Platform_Credits_creditbased": {
+      "path": "lambda-function/Platform_Credits_creditbased",
+      "functionName": "Platform_Credits_creditbased"
+    },
+    "reboot_instance": {
+      "path": "lambda-function/reboot_instance",
+      "functionName": "reboot_instance"
+    },
+    "start_instance": {
+      "path": "lambda-function/start_instance",
+      "functionName": "start_instance"
+    },
+    "stop_instance": {
+      "path": "lambda-function/stop_instance",
+      "functionName": "stop_instance"
+    },
+    "Storage_Credits_Creditbased": {
+      "path": "lambda-function/Storage_Credits_Creditbased",
+      "functionName": "Storage_Credits_Creditbased"
+    },
+    "terminate_instances": {
+      "path": "lambda-function/terminate_instances",
+      "functionName": "terminate_instances"
+    },
+    "Terminate_user_insatnce_creditbased": {
+      "path": "lambda-function/Terminate_user_insatnce_creditbased",
+      "functionName": "Terminate_user_insatnce_creditbased"
+    },
+    "update_provisioning_status": {
+      "path": "lambda-function/update_provisioning_status",
+      "functionName": "update_provisioning_status"
+    },
+    "Users_Credits_Creditbased": {
+      "path": "lambda-function/Users_Credits_Creditbased",
+      "functionName": "Users_Credits_Creditbased"
+    },
+    "Users_Credits_Fetch_Creditbased_code": {
+      "path": "lambda-function/Users_Credits_Fetch_Creditbased_code",
+      "functionName": "Users_Credits_Fetch_Creditbased_code"
+    },
+    "User_environment_history_creditbased": {
+      "path": "lambda-function/User_environment_history_creditbased",
+      "functionName": "User_environment_history_creditbased"
+    },
+    "user_instance_terminate_by_schedule_creditbased": {
+      "path": "lambda-function/user_instance_terminate_by_schedule_creditbased",
+      "functionName": "user_instance_terminate_by_schedule_creditbased"
+    },
+    "_Users_Account_History_Fetch_Creditbased": {
+      "path": "lambda-function/_Users_Account_History_Fetch_Creditbased",
+      "functionName": "_Users_Account_History_Fetch_Creditbased"
+    }
+  }
+}

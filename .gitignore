@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+*.json
+!.github/lambda-deploy-map.json
+tests/
+function.zip
