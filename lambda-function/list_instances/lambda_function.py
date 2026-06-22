@@ -7,27 +7,70 @@ from auth_utils import get_email_from_event
 # DynamoDB setup
 dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 table = dynamodb.Table('instance_tracker_creditbased')
+registry_table = dynamodb.Table('instance_registry_creditbased')
 
 
-# ✅ Fetch all DynamoDB items ONCE (optimized)
-def get_all_items(email):
+def query_all_pages(dynamodb_table, query_kwargs):
     items = []
+    query_kwargs = dict(query_kwargs)
 
-    response = table.query(
-        KeyConditionExpression=Key('email_id').eq(email),
-        ProjectionExpression="instance_id, total_credits, used_time"  # ✅ optimization
-    )
+    response = dynamodb_table.query(**query_kwargs)
     items.extend(response.get('Items', []))
 
     while 'LastEvaluatedKey' in response:
-        response = table.query(
-            KeyConditionExpression=Key('email_id').eq(email),
-            ProjectionExpression="instance_id, total_credits, used_time",  # ✅ optimization
-            ExclusiveStartKey=response['LastEvaluatedKey']
-        )
+        query_kwargs["ExclusiveStartKey"] = response['LastEvaluatedKey']
+        response = dynamodb_table.query(**query_kwargs)
         items.extend(response.get('Items', []))
 
     return items
+
+
+# ✅ Fetch all DynamoDB items ONCE (optimized)
+def get_all_items(email, instance_ids=None):
+    items = []
+
+    if instance_ids is None:
+        return query_all_pages(table, {
+            "KeyConditionExpression": Key('email_id').eq(email),
+            "ProjectionExpression": "instance_id, total_credits, used_time"  # ✅ optimization
+        })
+
+    if isinstance(instance_ids, str):
+        instance_ids = [instance_ids]
+
+    for instance_id in instance_ids:
+        if not instance_id:
+            continue
+
+        items.extend(query_all_pages(table, {
+            "IndexName": "instance_email_index",
+            "KeyConditionExpression": Key('instance_id').eq(instance_id) & Key('email_id').eq(email),
+            "ProjectionExpression": "instance_id, total_credits, used_time"  # ✅ optimization
+        }))
+
+    return items
+
+
+def get_active_instance_ids(email):
+    instance_ids = []
+    seen = set()
+
+    for state in ['running', 'stopped']:
+        registry_items = query_all_pages(registry_table, {
+            "IndexName": "state-email_id-index",
+            "KeyConditionExpression": Key('state').eq(state) & Key('email_id').eq(email),
+            "ProjectionExpression": "instance_id"
+        })
+
+        for item in registry_items:
+            instance_id = item.get('instance_id')
+            if not instance_id or instance_id in seen:
+                continue
+
+            seen.add(instance_id)
+            instance_ids.append(instance_id)
+
+    return instance_ids
 
 def get_ssh_user(ec2, image_id):
     if not image_id:
@@ -84,16 +127,38 @@ def lambda_handler(event, context):
         # headers = event.get('headers', {})
         # auth = headers.get('Authorization', '') or headers.get('authorization', '')
         # email = auth.replace("Bearer ", "").strip()
-        email, error = get_email_from_event(event)
-        print(f"email id : {email}")
+        # body = json.loads(event.get('body', '{}'))
 
-        if error:
-            return error
+        headers = event.get('headers', {})
+        role = headers.get('Role', '') or headers.get('role', '')
+        # for mother portal admin page to get email
+        if role == 'admin' and headers.get('email_id'):
+            email = headers.get('email_id')
+            print(f"email id : {email}")
+        # for splunk lab page to get email 
+        else:
+            email, error = get_email_from_event(event)
+            print(f"email id : {email}")
+            if error:
+              return error
 
 
 
         # ✅ Get all credits data ONCE
-        all_items = get_all_items(email)
+        active_instance_ids = get_active_instance_ids(email)
+
+        if not active_instance_ids:
+            return {
+                'statusCode': 200,
+                'headers': {
+                    "Access-Control-Allow-Origin": "*",
+                    "Access-Control-Allow-Headers": "*",
+                    "Access-Control-Allow-Methods": "GET, OPTIONS"
+                },
+                'body': json.dumps([])
+            }
+
+        all_items = get_all_items(email, active_instance_ids)
         credits_map = build_credits_map(all_items)
 
         all_instances = []
@@ -113,10 +178,13 @@ def lambda_handler(event, context):
                 ec2 = boto3.client('ec2', region_name=region)
 
                 paginator = ec2.get_paginator('describe_instances')
-                pages = paginator.paginate(Filters=[
+                filters = [
                     {'Name': 'tag:Owner', 'Values': [email]},
-                    {'Name': 'instance-state-name', 'Values': ['pending', 'running', 'stopping', 'stopped']}  # ✅ small optimization
-                ])
+                    {'Name': 'instance-state-name', 'Values': ['running', 'stopped']}  # ✅ small optimization
+                ]
+                filters.append({'Name': 'instance-id', 'Values': active_instance_ids})
+
+                pages = paginator.paginate(Filters=filters)
 
                 for page in pages:
                     for reservation in page['Reservations']:
@@ -206,3 +274,19 @@ def lambda_handler(event, context):
             },
             'body': json.dumps({"message": "Internal Server Error", "error": str(e)})
         }
+
+
+if __name__ == "__main__":
+    test_event = {
+        "headers": {
+            "Role": "admin",
+            "email_id": "lenomicheal8@gmail.com"
+        },
+        "queryStringParameters": {
+            # "instance_id": "i-0123456789abcdef0"   # optional
+        },
+        "body": None
+    }
+
+    result = lambda_handler(test_event, None)
+    print(json.dumps(result, indent=2))
