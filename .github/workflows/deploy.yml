@@ -1,4 +1,4 @@
-name: Deploy Changed Lambda
+name: Deploy Changed Lambdas
 
 on:
   push:

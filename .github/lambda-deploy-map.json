@@ -1,6 +1,6 @@
 {
   "enabledFunctions": [
-    "jwt"
+    "list_instances"
   ],
   "functions": {
     "Add_Credits_By_Admin": {
