@@ -54,6 +54,7 @@ def get_ssh_user(ec2, image_id):
             return 'ec2-user'
         else:
             return 'ec2-user'
+            
 
     except Exception:
         return 'ec2-user'
