@@ -276,17 +276,18 @@ def lambda_handler(event, context):
         }
 
 
-if __name__ == "__main__":
-    test_event = {
-        "headers": {
-            "Role": "admin",
-            "email_id": "lenomicheal8@gmail.com"
-        },
-        "queryStringParameters": {
-            # "instance_id": "i-0123456789abcdef0"   # optional
-        },
-        "body": None
-    }
 
-    result = lambda_handler(test_event, None)
-    print(json.dumps(result, indent=2))
+# if __name__ == "__main__":
+#     test_event = {
+#         "headers": {
+#             "Role": "admin",
+#             "email_id": "lenomicheal8@gmail.com"
+#         },
+#         "queryStringParameters": {
+#             # "instance_id": "i-0123456789abcdef0"   # optional
+#         },
+#         "body": None
+#     }
+
+#     result = lambda_handler(test_event, None)
+#     print(json.dumps(result, indent=2))
